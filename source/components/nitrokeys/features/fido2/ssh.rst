@@ -7,22 +7,6 @@ SSH (Secure Shell) is a network protocol used to securely access and manage remo
 
 With a Nitrokey, the private SSH key is generated and stored directly on the device, so it never leaves the hardware. Each login requires you to touch the Nitrokey, adding a simple physical confirmation that protects against unauthorized access. For example, when connecting to a server, GitLab, or GitHub.
 
-Non-Resident Keys
-~~~~~~~~~~~~~~~~~
-
-A non-resident key (non-discoverable credential) is the default credential type created when the user registers their Nitrokey FIDO2 with an authentication system that supports FIDO2/WebAuthn.
-The authentication system stores the key handle, while the private key remains securely inside the Nitrokey.
-This configuration uses no storage space on the Nitrokey and depends on the authentication system to supply the key handle during login.
-The FIDO2 PIN controls access to the Nitrokey and authorizes all operations involving private keys.
-
-Resident Keys
-~~~~~~~~~~~~~~~~~
-
-A resident key (discoverable credential) is stored directly on the Nitrokey, including all credential information and metadata required for authentication.
-This allows the credential to be found automatically by the authentication system without providing an external key handle and enables username-less authentication.
-Resident credentials are protected by the FIDO2 PIN, which authorizes their use and ensures that only the authorized user can access them.
-Each credential typically occupies a few hundred bytes of secure storage. The total number of credentials depends on the Nitrokey model and firmware version, typically between 25 and 100 entries.
-
 Generating SSH Key
 ------------------
 
@@ -41,10 +25,6 @@ Generating SSH Key
    .. code-block:: shell-session
 
       ssh-keygen -t ed25519-sk -O resident -C "your_comment"
-
-   .. warning::
-
-      The ``-O resident`` option stores key handles on the Nitrokey, allowing others with physical access to list them and see where the key was used.
 
    .. note::
 
@@ -66,10 +46,6 @@ Generating SSH Key
    ``~/.ssh/id_ed25519_sk`` → handle to the private key (stored securely on the Nitrokey)
 
    ``~/.ssh/id_ed25519_sk.pub`` → public key file
-
-   .. note::
-
-      The file names may differ if you specified a custom name when generating the key.
 
 .. figure:: images/ssh/terminal.png
    :alt: img0
@@ -93,6 +69,4 @@ For Git Services (GitLab, GitHub, etc.)
       
       sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG7wZW4zc2guY29tAAAAILeZl6r07HV4i1rK07OfLqD3J4IzX2q0lB6Ok0pdxoG5AAAABHNzaDo= your_comment
 
-2. Copy the output and add it to your account’s SSH key settings.  
-
-   See `GitLab  <https://docs.gitlab.com/user/ssh/#add-an-ssh-key-to-your-gitlab-account>`_ or `GitHub  <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`_ for detailed steps.
+2. Copy the output and add it to your account’s SSH key settings. See `GitLab  <https://docs.gitlab.com/user/ssh/#add-an-ssh-key-to-your-gitlab-account>`_ or `GitHub  <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`_ for detailed steps. To enable SSH remote server access, add your public key to the file ``~/.ssh/authorized_keys`` of your user account on the SSH server.
