@@ -13,53 +13,44 @@ The bag and all screws on the bottom of the device have been sealed. For the bag
 
    .. tabs::
       .. tab:: Nitropad V56 GPU
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/V56-GPU_sealed.jpg
             :alt: V56 GPU
 
       .. tab:: Nitropad V56 GPU
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/V56_sealed.jpg
             :alt: V56
 
       .. tab:: Nitropad V54
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/V54_sealed.jpg
             :alt: V54
 
       .. tab:: Nitropad T480
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/T480_sealed.jpg
             :alt: T480
 
       .. tab:: Nitropad T480s
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/T480s_sealed.jpg
             :alt: T480s
          
       .. tab:: Nitropad T430
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/SchraubenmarkierungT430.jpg
             :alt: T430
 
       .. tab:: Nitropad X230
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/SchraubenmarkierungX230.jpg
             :alt: X230
 
       .. tab:: Nitropad NS50
-         
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/ns50_sealed.jpg
             :alt: NS50
 
       .. tab:: Nitropad NV41
-
          .. figure:: /components/nitropad-nitropc/images/sealed-hardware/nv41_sealed.jpg
             :alt: NV41
 
    
    NitroPC Pro 2:
-d
+
       For the NitroPC Pro 2 we use tamper evident tape on the casing.
       After receiving your computer check that no tape have been removed.
       Then you can remove the tape and use rubbing alcohol to remove the tamper marks.
