@@ -30,6 +30,8 @@ Nitrokey FIDO2 FAQ
 
    After `disabling Enforce Attestation <https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key#fido-security-key-optional-settings>`_ Nitrokey FIDO2 is supported by Azure Entra ID out of the box.
 
+.. _fido2-resident-difference-nonresident:
+
 .. faq:: What is the difference between Non-Resident Keys and Resident?
 
    A non-resident key (non-discoverable credential) is the default credential type created when the user registers their Nitrokey FIDO2 with an authentication system that supports FIDO2/WebAuthn.

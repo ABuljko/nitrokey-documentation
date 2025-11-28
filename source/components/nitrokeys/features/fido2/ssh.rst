@@ -13,6 +13,7 @@ Generating SSH Key
 2. Open a terminal and create your SSH key. Replace ``"your_comment"`` with a label to identify it (e.g., "Nitrokey GitLab").  
    By default, the key is a non-resident key, meaning a local key handle is stored in ``~/.ssh/`` while the private key remains securely on the Nitrokey.  
    Use the ``-O resident`` option if you want the key to be portable across systems.
+   For a more detailed explanation of the difference  between resident and non-resident keys, check out our :ref:`FAQ section <fido2-resident-vs-nonresident>`.
 
    .. code-block:: shell-session
 

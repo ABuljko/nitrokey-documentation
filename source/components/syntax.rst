@@ -46,7 +46,7 @@ Normal text again.
 | the source file.
 
 H3 Heading
-^^^^^^^^^^
+----------
 
 
 Only the following message boxes should be used:
