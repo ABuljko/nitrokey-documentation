@@ -32,8 +32,8 @@ Nitrokey FIDO2 FAQ
 
 .. _fido2-resident-difference-nonresident:
 
-.. faq:: What is the difference between Non-Resident Keys and Resident?
-
+.. faq:: What is the difference between discoverable credential and non-discoverable credential?
+   
    A non-discoverable credential (also: non-resident key) is the default credential type created when the user registers their Nitrokey with an authentication system that supports FIDO2/WebAuthn.
    This configuration uses no storage space on the Nitrokey and depends on the authentication system to supply the key handle during login.
    Therefore an unlimited amount of credentials can be used with a Nitrokey. During login users have to enter their user name.
