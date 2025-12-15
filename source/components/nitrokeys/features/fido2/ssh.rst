@@ -60,7 +60,7 @@ Once your SSH key pair is generated, the public key must be added to the service
 
       cat ~/.ssh/id_ed25519_sk.pub
 
-   Example output (do not use this key)::
+   Example output (don’t use this key)::
       
       sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG7wZW4zc2guY29tAAAAILeZl6r07HV4i1rK07OfLqD3J4IzX2q0lB6Ok0pdxoG5AAAABHNzaDo= your_comment
 
